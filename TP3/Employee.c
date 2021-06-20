@@ -87,7 +87,7 @@ int employee_setNombre(Employee* this, char* nombre){
 	int retorno = 0;
 
 	if(this != NULL && nombre != NULL){
-		if(EsNombreValido(nombre)){
+		if(EsNombreYApellidoValido(nombre)){
 			strcpy(this->nombre, nombre);
 			retorno = 1;
 		}
