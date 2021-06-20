@@ -426,6 +426,20 @@ int EsNombreValido(char* stringRecibido) {
     return retorno;
 }
 
+int EsNombreYApellidoValido(char* stringRecibido){
+    int retorno = 1;
+    int i;
+    for(i = 0; stringRecibido[i] != '\0'; i++) {
+        if((stringRecibido[i] < 'A' || stringRecibido[i] > 'Z' ) &&
+           (stringRecibido[i] < 'a' || stringRecibido[i] > 'z') &&
+		    stringRecibido[i] != ' ' && stringRecibido[i] != '-') {
+            retorno = 0;
+            break;
+        }
+    }
+    return retorno;
+}
+
 int EsAlfanumericoValido(char* stringRecibido){
     int retorno = 1;
     int i;
