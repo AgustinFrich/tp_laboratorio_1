@@ -290,6 +290,8 @@ int EsCharValido(char);
  */
 int EsNombreValido(char*);
 
+int EsNombreYApellidoValido(char*);
+
 /** \brief comprueba si la cadena recibida es un string alfanumerico
  *
  * param char* charRecibido
